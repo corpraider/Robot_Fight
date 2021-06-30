@@ -1,6 +1,6 @@
 // Updated to get the game started 
 
-var playerName = window.prompt("what is your robot's name?");
+var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
 var playerAttack = 10;
 
@@ -12,6 +12,8 @@ console.log(playerName, playerAttack, playerHealth);
 var enemyName = "Roberto";
 var enemyHealth = 50;
 var enemyAttack = 12;
+
+// Execution Function
 
 var fight = function() {
     window.alert("Welcome to Robot Gladiators!");
@@ -30,12 +32,18 @@ var fight = function() {
   playerHealth = playerHealth - enemyAttack;
 
   // Log a resulting message to the console so we know that it worked.
-}
+
+  console.log(
+    enemyName + " attacked " + playerName + " . " + playerName + " now has " + playerName + " health remaining. "
+  );
+
+//execution function
+
+fight();
 
 // check to see if the value of playerHealth variable is greater than 0
 
 if (playerHealth > 0) {
     console.log("Your Player is still Alive")
 }
-// execution of the function fight
-fight();
+}
